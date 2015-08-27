@@ -19,4 +19,14 @@ def test_std1():
 	exp =1.0
 	assert_equal(obs,exp)
 
+def test_std2():
+        obs =std([])
+        exp =0
+        assert_equal(obs,exp)
+
+def test_std3():
+        obs =std([0.0,4.0])
+        exp =2.0
+        assert_equal(obs,exp)
+
 # print mean([2,4

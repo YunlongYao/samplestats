@@ -4,7 +4,8 @@ def mean(vals):
 	length = len(vals)
 	return float(total)/length
 def std(vals):
-	return 1.0
-
+	if len(vals) == 0:
+		return 0.0
+	return vals[-1]/2.0
 # print mean([2,4])
 
