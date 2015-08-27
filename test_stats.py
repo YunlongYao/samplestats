@@ -1,5 +1,5 @@
 from stats import mean
-from nose.tools import assert_equal
+from nose.tools import assert_equal, assert_almost_equal
 
 def test_mean():
 
@@ -11,7 +11,7 @@ def test_float_mean():
 #test_float_mean()
 
 def test_negative_mean():
-	assert_equal(mean([-4,-2]), -3)
+	assert_almost_equal(mean([2,-2,4]), 1.3333,places = 4)
 #test_negative_mean()
 
 # print mean([2,4
