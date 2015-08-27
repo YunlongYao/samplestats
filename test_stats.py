@@ -7,11 +7,11 @@ def test_mean():
 #test_mean()
 
 def test_float_mean():
-        assert(mean([1,2])==1.5)
+        assert_equal(mean([1,2]),1.5)
 #test_float_mean()
 
 def test_negative_mean():
-	assert(mean([-4,-2])== -2.5)
+	assert_equal(mean([-4,-2]), -3)
 #test_negative_mean()
 
 # print mean([2,4
